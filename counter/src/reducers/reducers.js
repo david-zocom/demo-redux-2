@@ -11,6 +11,8 @@ function rootReducer(state, action) {
 			return {
 				value: state.value - 1
 			};
+		default:
+			return Object.assign({}, state);
 	}
 }
 
